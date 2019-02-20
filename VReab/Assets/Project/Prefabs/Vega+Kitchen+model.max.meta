@@ -1,0 +1,985 @@
+fileFormatVersion: 2
+guid: 9024844ea6229b247b874d08e48bb166
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ArchModels_68_02_obj_017
+    100002: ArchModels_68_02_obj_018
+    100004: ArchModels_68_02_obj_019
+    100006: ArchModels_68_02_obj_020
+    100008: ArchModels_68_02_obj_021
+    100010: ArchModels_68_02_obj_022
+    100012: ArchModels_68_02_obj_023
+    100014: ArchModels_68_02_obj_024
+    100016: ArchModels_68_02_obj_025
+    100018: ArchModels_68_02_obj_026
+    100020: ArchModels_68_02_obj_027
+    100022: ArchModels_68_02_obj_028
+    100024: ArchModels_68_02_obj_029
+    100026: ArchModels_68_02_obj_030
+    100028: Box01
+    100030: Box01 1
+    100032: Box02
+    100034: Box02 1
+    100036: Box03
+    100038: Box03 1
+    100040: Box037
+    100042: Box04
+    100044: Box042
+    100046: Box043
+    100048: Box049
+    100050: Box05
+    100052: Box050
+    100054: Box051
+    100056: Box052
+    100058: Box07
+    100060: Box1717
+    100062: Box1718
+    100064: Box1720
+    100066: Box1721
+    100068: Box1722
+    100070: Box1723
+    100072: Box1729
+    100074: Box1730
+    100076: Box1731
+    100078: Box1738
+    100080: Box1739
+    100082: Box179
+    100084: Box180
+    100086: Box874
+    100088: Box878
+    100090: Box884
+    100092: Box885
+    100094: Box886
+    100096: Box887
+    100098: Box889
+    100100: Box890
+    100102: Box892
+    100104: Box893
+    100106: Box896
+    100108: Box897
+    100110: Box899
+    100112: Box900
+    100114: Box902
+    100116: Box904
+    100118: Box905
+    100120: cgaxis_models_06_20_02
+    100122: cgaxis_models_06_20_02 1
+    100124: cgaxis_models_06_20_03
+    100126: cgaxis_models_06_20_04
+    100128: ChamferCyl01
+    100130: ChamferCyl02
+    100132: cook_018_00
+    100134: cook_018_01
+    100136: cook_018_02
+    100138: cook_018_03
+    100140: Cylinder005
+    100142: Cylinder006
+    100144: Cylinder007
+    100146: Cylinder008
+    100148: Cylinder009
+    100150: Cylinder01
+    100152: Cylinder02
+    100154: Cylinder02 1
+    100156: Cylinder02 2
+    100158: Cylinder03
+    100160: Cylinder04
+    100162: Cylinder25
+    100164: Cylinder26
+    100166: Cylinder28
+    100168: Cylinder29
+    100170: DADPLACEGROUP01
+    100172: dcd
+    100174: ff
+    100176: Group01
+    100178: Group028
+    100180: Group1871011729
+    100182: Group26
+    100184: Group27
+    100186: kettle_008_00
+    100188: kettle_008_01
+    100190: kettle_008_02
+    100192: kettle_008_03
+    100194: kettle_008_04
+    100196: kettle_008_05
+    100198: kettle_008_06
+    100200: kettle_008_07
+    100202: kettle_008_08
+    100204: Line01
+    100206: Line011
+    100208: Line02
+    100210: Line039
+    100212: Line040
+    100214: Loft03
+    100216: Loft04
+    100218: obj_554
+    100220: obj_555
+    100222: obj_556
+    100224: obj_557
+    100226: objCylinder06
+    100228: Object01
+    100230: Object01 1
+    100232: Object01 2
+    100234: Object02
+    100236: papier
+    100238: Rectangle03
+    100240: Rectangle04
+    100242: Rectangle04 1
+    100244: Rectangle05
+    100246: Rectangle06
+    100248: Rectangle07
+    100250: Rectangle07 1
+    100252: Rectangle08
+    100254: Rectangle08 1
+    100256: Rectangle09
+    100258: Rectangle09 1
+    100260: Rectangle10
+    100262: Rectangle11
+    100264: Rectangle12
+    100266: Rectangle13
+    100268: Rectangle14
+    100270: rf
+    100272: Shape01
+    100274: sx
+    100276: sxsx
+    100278: sxsx 1
+    100280: Tube02
+    100282: Tube03
+    100284: Tube04
+    100286: Tube05
+    100288: Tube06
+    100290: Tube07
+    100292: Tube08
+    100294: Tube09
+    100296: Tube10
+    100298: Tube11
+    100300: Tube12
+    100302: Tube13
+    100304: //RootNode
+    100306: wdw
+    100308: wdwd
+    400000: ArchModels_68_02_obj_017
+    400002: ArchModels_68_02_obj_018
+    400004: ArchModels_68_02_obj_019
+    400006: ArchModels_68_02_obj_020
+    400008: ArchModels_68_02_obj_021
+    400010: ArchModels_68_02_obj_022
+    400012: ArchModels_68_02_obj_023
+    400014: ArchModels_68_02_obj_024
+    400016: ArchModels_68_02_obj_025
+    400018: ArchModels_68_02_obj_026
+    400020: ArchModels_68_02_obj_027
+    400022: ArchModels_68_02_obj_028
+    400024: ArchModels_68_02_obj_029
+    400026: ArchModels_68_02_obj_030
+    400028: Box01
+    400030: Box01 1
+    400032: Box02
+    400034: Box02 1
+    400036: Box03
+    400038: Box03 1
+    400040: Box037
+    400042: Box04
+    400044: Box042
+    400046: Box043
+    400048: Box049
+    400050: Box05
+    400052: Box050
+    400054: Box051
+    400056: Box052
+    400058: Box07
+    400060: Box1717
+    400062: Box1718
+    400064: Box1720
+    400066: Box1721
+    400068: Box1722
+    400070: Box1723
+    400072: Box1729
+    400074: Box1730
+    400076: Box1731
+    400078: Box1738
+    400080: Box1739
+    400082: Box179
+    400084: Box180
+    400086: Box874
+    400088: Box878
+    400090: Box884
+    400092: Box885
+    400094: Box886
+    400096: Box887
+    400098: Box889
+    400100: Box890
+    400102: Box892
+    400104: Box893
+    400106: Box896
+    400108: Box897
+    400110: Box899
+    400112: Box900
+    400114: Box902
+    400116: Box904
+    400118: Box905
+    400120: cgaxis_models_06_20_02
+    400122: cgaxis_models_06_20_02 1
+    400124: cgaxis_models_06_20_03
+    400126: cgaxis_models_06_20_04
+    400128: ChamferCyl01
+    400130: ChamferCyl02
+    400132: cook_018_00
+    400134: cook_018_01
+    400136: cook_018_02
+    400138: cook_018_03
+    400140: Cylinder005
+    400142: Cylinder006
+    400144: Cylinder007
+    400146: Cylinder008
+    400148: Cylinder009
+    400150: Cylinder01
+    400152: Cylinder02
+    400154: Cylinder02 1
+    400156: Cylinder02 2
+    400158: Cylinder03
+    400160: Cylinder04
+    400162: Cylinder25
+    400164: Cylinder26
+    400166: Cylinder28
+    400168: Cylinder29
+    400170: DADPLACEGROUP01
+    400172: dcd
+    400174: ff
+    400176: Group01
+    400178: Group028
+    400180: Group1871011729
+    400182: Group26
+    400184: Group27
+    400186: kettle_008_00
+    400188: kettle_008_01
+    400190: kettle_008_02
+    400192: kettle_008_03
+    400194: kettle_008_04
+    400196: kettle_008_05
+    400198: kettle_008_06
+    400200: kettle_008_07
+    400202: kettle_008_08
+    400204: Line01
+    400206: Line011
+    400208: Line02
+    400210: Line039
+    400212: Line040
+    400214: Loft03
+    400216: Loft04
+    400218: obj_554
+    400220: obj_555
+    400222: obj_556
+    400224: obj_557
+    400226: objCylinder06
+    400228: Object01
+    400230: Object01 1
+    400232: Object01 2
+    400234: Object02
+    400236: papier
+    400238: Rectangle03
+    400240: Rectangle04
+    400242: Rectangle04 1
+    400244: Rectangle05
+    400246: Rectangle06
+    400248: Rectangle07
+    400250: Rectangle07 1
+    400252: Rectangle08
+    400254: Rectangle08 1
+    400256: Rectangle09
+    400258: Rectangle09 1
+    400260: Rectangle10
+    400262: Rectangle11
+    400264: Rectangle12
+    400266: Rectangle13
+    400268: Rectangle14
+    400270: rf
+    400272: Shape01
+    400274: sx
+    400276: sxsx
+    400278: sxsx 1
+    400280: Tube02
+    400282: Tube03
+    400284: Tube04
+    400286: Tube05
+    400288: Tube06
+    400290: Tube07
+    400292: Tube08
+    400294: Tube09
+    400296: Tube10
+    400298: Tube11
+    400300: Tube12
+    400302: Tube13
+    400304: //RootNode
+    400306: wdw
+    400308: wdwd
+    2100000: cgaxis_models_06_20_02
+    2100002: cgaxis_models_06_20_01
+    2100004: cgaxis_models_06_20_04
+    2100006: cgaxis_models_06_20_03
+    2100008: koryon
+    2100010: black
+    2100012: metal
+    2100014: krom
+    2100016: 'Material #101'
+    2100018: baski
+    2100020: 01 - Default
+    2100022: 'Material #29'
+    2100024: lightbluemetal
+    2100026: 11 - Default
+    2100028: 12 - Defaultwd
+    2100030: 06 - Defaultfgeg
+    2100032: No Name
+    2100034: kapak_2
+    2100036: 17 - Defaultcdvcdc
+    2100038: oturak
+    2100040: tabure
+    2100042: dolap kapak
+    2100044: beyazzz
+    2100046: dwd
+    2100048: Alucobond2
+    2100050: fransiz_balkon_cam
+    2100052: 'Material #603'
+    2100054: 'Material #159'
+    2300000: ArchModels_68_02_obj_017
+    2300002: ArchModels_68_02_obj_018
+    2300004: ArchModels_68_02_obj_019
+    2300006: ArchModels_68_02_obj_020
+    2300008: ArchModels_68_02_obj_021
+    2300010: ArchModels_68_02_obj_022
+    2300012: ArchModels_68_02_obj_023
+    2300014: ArchModels_68_02_obj_024
+    2300016: ArchModels_68_02_obj_025
+    2300018: ArchModels_68_02_obj_026
+    2300020: ArchModels_68_02_obj_027
+    2300022: ArchModels_68_02_obj_028
+    2300024: ArchModels_68_02_obj_029
+    2300026: ArchModels_68_02_obj_030
+    2300028: Box01
+    2300030: Box01 1
+    2300032: Box02
+    2300034: Box02 1
+    2300036: Box03
+    2300038: Box03 1
+    2300040: Box037
+    2300042: Box04
+    2300044: Box042
+    2300046: Box043
+    2300048: Box049
+    2300050: Box05
+    2300052: Box050
+    2300054: Box051
+    2300056: Box052
+    2300058: Box07
+    2300060: Box1717
+    2300062: Box1718
+    2300064: Box1720
+    2300066: Box1721
+    2300068: Box1722
+    2300070: Box1723
+    2300072: Box1729
+    2300074: Box1730
+    2300076: Box1731
+    2300078: Box1738
+    2300080: Box1739
+    2300082: Box179
+    2300084: Box180
+    2300086: Box874
+    2300088: Box878
+    2300090: Box884
+    2300092: Box885
+    2300094: Box886
+    2300096: Box887
+    2300098: Box889
+    2300100: Box890
+    2300102: Box892
+    2300104: Box893
+    2300106: Box896
+    2300108: Box897
+    2300110: Box899
+    2300112: Box900
+    2300114: Box902
+    2300116: Box904
+    2300118: Box905
+    2300120: cgaxis_models_06_20_02
+    2300122: cgaxis_models_06_20_02 1
+    2300124: cgaxis_models_06_20_03
+    2300126: cgaxis_models_06_20_04
+    2300128: ChamferCyl01
+    2300130: ChamferCyl02
+    2300132: cook_018_00
+    2300134: cook_018_01
+    2300136: cook_018_02
+    2300138: cook_018_03
+    2300140: Cylinder005
+    2300142: Cylinder006
+    2300144: Cylinder007
+    2300146: Cylinder008
+    2300148: Cylinder009
+    2300150: Cylinder01
+    2300152: Cylinder02
+    2300154: Cylinder02 1
+    2300156: Cylinder02 2
+    2300158: Cylinder03
+    2300160: Cylinder04
+    2300162: Cylinder25
+    2300164: Cylinder26
+    2300166: Cylinder28
+    2300168: Cylinder29
+    2300170: kettle_008_00
+    2300172: kettle_008_01
+    2300174: kettle_008_02
+    2300176: kettle_008_03
+    2300178: kettle_008_04
+    2300180: kettle_008_05
+    2300182: kettle_008_06
+    2300184: kettle_008_07
+    2300186: kettle_008_08
+    2300188: Line01
+    2300190: Line011
+    2300192: Line02
+    2300194: Line039
+    2300196: Line040
+    2300198: Loft03
+    2300200: Loft04
+    2300202: obj_554
+    2300204: obj_555
+    2300206: obj_556
+    2300208: obj_557
+    2300210: objCylinder06
+    2300212: Object01
+    2300214: Object01 1
+    2300216: Object01 2
+    2300218: Object02
+    2300220: papier
+    2300222: Rectangle03
+    2300224: Rectangle04
+    2300226: Rectangle04 1
+    2300228: Rectangle05
+    2300230: Rectangle06
+    2300232: Rectangle07
+    2300234: Rectangle07 1
+    2300236: Rectangle08
+    2300238: Rectangle08 1
+    2300240: Rectangle09
+    2300242: Rectangle09 1
+    2300244: Rectangle10
+    2300246: Rectangle11
+    2300248: Rectangle12
+    2300250: Rectangle13
+    2300252: Rectangle14
+    2300254: Shape01
+    2300256: Tube02
+    2300258: Tube03
+    2300260: Tube04
+    2300262: Tube05
+    2300264: Tube06
+    2300266: Tube07
+    2300268: Tube08
+    2300270: Tube09
+    2300272: Tube10
+    2300274: Tube11
+    2300276: Tube12
+    2300278: Tube13
+    3300000: ArchModels_68_02_obj_017
+    3300002: ArchModels_68_02_obj_018
+    3300004: ArchModels_68_02_obj_019
+    3300006: ArchModels_68_02_obj_020
+    3300008: ArchModels_68_02_obj_021
+    3300010: ArchModels_68_02_obj_022
+    3300012: ArchModels_68_02_obj_023
+    3300014: ArchModels_68_02_obj_024
+    3300016: ArchModels_68_02_obj_025
+    3300018: ArchModels_68_02_obj_026
+    3300020: ArchModels_68_02_obj_027
+    3300022: ArchModels_68_02_obj_028
+    3300024: ArchModels_68_02_obj_029
+    3300026: ArchModels_68_02_obj_030
+    3300028: Box01
+    3300030: Box01 1
+    3300032: Box02
+    3300034: Box02 1
+    3300036: Box03
+    3300038: Box03 1
+    3300040: Box037
+    3300042: Box04
+    3300044: Box042
+    3300046: Box043
+    3300048: Box049
+    3300050: Box05
+    3300052: Box050
+    3300054: Box051
+    3300056: Box052
+    3300058: Box07
+    3300060: Box1717
+    3300062: Box1718
+    3300064: Box1720
+    3300066: Box1721
+    3300068: Box1722
+    3300070: Box1723
+    3300072: Box1729
+    3300074: Box1730
+    3300076: Box1731
+    3300078: Box1738
+    3300080: Box1739
+    3300082: Box179
+    3300084: Box180
+    3300086: Box874
+    3300088: Box878
+    3300090: Box884
+    3300092: Box885
+    3300094: Box886
+    3300096: Box887
+    3300098: Box889
+    3300100: Box890
+    3300102: Box892
+    3300104: Box893
+    3300106: Box896
+    3300108: Box897
+    3300110: Box899
+    3300112: Box900
+    3300114: Box902
+    3300116: Box904
+    3300118: Box905
+    3300120: cgaxis_models_06_20_02
+    3300122: cgaxis_models_06_20_02 1
+    3300124: cgaxis_models_06_20_03
+    3300126: cgaxis_models_06_20_04
+    3300128: ChamferCyl01
+    3300130: ChamferCyl02
+    3300132: cook_018_00
+    3300134: cook_018_01
+    3300136: cook_018_02
+    3300138: cook_018_03
+    3300140: Cylinder005
+    3300142: Cylinder006
+    3300144: Cylinder007
+    3300146: Cylinder008
+    3300148: Cylinder009
+    3300150: Cylinder01
+    3300152: Cylinder02
+    3300154: Cylinder02 1
+    3300156: Cylinder02 2
+    3300158: Cylinder03
+    3300160: Cylinder04
+    3300162: Cylinder25
+    3300164: Cylinder26
+    3300166: Cylinder28
+    3300168: Cylinder29
+    3300170: kettle_008_00
+    3300172: kettle_008_01
+    3300174: kettle_008_02
+    3300176: kettle_008_03
+    3300178: kettle_008_04
+    3300180: kettle_008_05
+    3300182: kettle_008_06
+    3300184: kettle_008_07
+    3300186: kettle_008_08
+    3300188: Line01
+    3300190: Line011
+    3300192: Line02
+    3300194: Line039
+    3300196: Line040
+    3300198: Loft03
+    3300200: Loft04
+    3300202: obj_554
+    3300204: obj_555
+    3300206: obj_556
+    3300208: obj_557
+    3300210: objCylinder06
+    3300212: Object01
+    3300214: Object01 1
+    3300216: Object01 2
+    3300218: Object02
+    3300220: papier
+    3300222: Rectangle03
+    3300224: Rectangle04
+    3300226: Rectangle04 1
+    3300228: Rectangle05
+    3300230: Rectangle06
+    3300232: Rectangle07
+    3300234: Rectangle07 1
+    3300236: Rectangle08
+    3300238: Rectangle08 1
+    3300240: Rectangle09
+    3300242: Rectangle09 1
+    3300244: Rectangle10
+    3300246: Rectangle11
+    3300248: Rectangle12
+    3300250: Rectangle13
+    3300252: Rectangle14
+    3300254: Shape01
+    3300256: Tube02
+    3300258: Tube03
+    3300260: Tube04
+    3300262: Tube05
+    3300264: Tube06
+    3300266: Tube07
+    3300268: Tube08
+    3300270: Tube09
+    3300272: Tube10
+    3300274: Tube11
+    3300276: Tube12
+    3300278: Tube13
+    4300000: cgaxis_models_06_20_02
+    4300002: cgaxis_models_06_20_02
+    4300004: cgaxis_models_06_20_04
+    4300006: cgaxis_models_06_20_03
+    4300008: Line011
+    4300010: Cylinder01
+    4300012: Rectangle04
+    4300014: Rectangle07
+    4300016: Box04
+    4300018: Box05
+    4300020: Box02
+    4300022: Box07
+    4300024: Cylinder02
+    4300026: Loft03
+    4300028: Loft04
+    4300030: Object01
+    4300032: Object02
+    4300034: Shape01
+    4300036: Rectangle09
+    4300038: Box01
+    4300040: Rectangle10
+    4300042: Rectangle11
+    4300044: Rectangle12
+    4300046: Rectangle13
+    4300048: Rectangle08
+    4300050: Rectangle14
+    4300052: Box02
+    4300054: Tube03
+    4300056: Rectangle04
+    4300058: Tube09
+    4300060: Rectangle08
+    4300062: Rectangle07
+    4300064: Rectangle06
+    4300066: Line02
+    4300068: Rectangle05
+    4300070: ChamferCyl02
+    4300072: Line01
+    4300074: Tube08
+    4300076: Tube07
+    4300078: Tube10
+    4300080: Tube11
+    4300082: Rectangle03
+    4300084: Tube06
+    4300086: Tube05
+    4300088: Tube04
+    4300090: Tube12
+    4300092: ChamferCyl01
+    4300094: Tube13
+    4300096: Box03
+    4300098: Rectangle09
+    4300100: papier
+    4300102: kettle_008_00
+    4300104: kettle_008_01
+    4300106: kettle_008_02
+    4300108: kettle_008_03
+    4300110: kettle_008_04
+    4300112: kettle_008_05
+    4300114: kettle_008_06
+    4300116: kettle_008_07
+    4300118: kettle_008_08
+    4300120: Cylinder006
+    4300122: Cylinder007
+    4300124: Cylinder008
+    4300126: Cylinder009
+    4300128: Cylinder005
+    4300130: cook_018_00
+    4300132: cook_018_01
+    4300134: cook_018_02
+    4300136: cook_018_03
+    4300138: Box1729
+    4300140: Box1730
+    4300142: Box1731
+    4300144: objCylinder06
+    4300146: Line039
+    4300148: Line040
+    4300150: obj_554
+    4300152: obj_555
+    4300154: obj_556
+    4300156: obj_557
+    4300158: Box1739
+    4300160: Box1738
+    4300162: Cylinder03
+    4300164: Cylinder02
+    4300166: Object01
+    4300168: Box01
+    4300170: Cylinder04
+    4300172: Box03
+    4300174: ArchModels_68_02_obj_017
+    4300176: ArchModels_68_02_obj_018
+    4300178: ArchModels_68_02_obj_019
+    4300180: ArchModels_68_02_obj_020
+    4300182: ArchModels_68_02_obj_021
+    4300184: ArchModels_68_02_obj_022
+    4300186: ArchModels_68_02_obj_023
+    4300188: ArchModels_68_02_obj_024
+    4300190: ArchModels_68_02_obj_025
+    4300192: ArchModels_68_02_obj_026
+    4300194: ArchModels_68_02_obj_027
+    4300196: ArchModels_68_02_obj_028
+    4300198: ArchModels_68_02_obj_029
+    4300200: ArchModels_68_02_obj_030
+    4300202: Box902
+    4300204: Box884
+    4300206: Box878
+    4300208: Box874
+    4300210: Box180
+    4300212: Box904
+    4300214: Box905
+    4300216: Box893
+    4300218: Box892
+    4300220: Box900
+    4300222: Box899
+    4300224: Box897
+    4300226: Box896
+    4300228: Box890
+    4300230: Box889
+    4300232: Box887
+    4300234: Box886
+    4300236: Box885
+    4300238: Box179
+    4300240: Box1723
+    4300242: Box1722
+    4300244: Box1721
+    4300246: Box1720
+    4300248: Box1718
+    4300250: Box1717
+    4300252: Box052
+    4300254: Box043
+    4300256: Box042
+    4300258: Box051
+    4300260: Box050
+    4300262: Cylinder02
+    4300264: Cylinder25
+    4300266: Cylinder26
+    4300268: Cylinder28
+    4300270: Tube02
+    4300272: Object01
+    4300274: Cylinder29
+    4300276: Box049
+    4300278: Box037
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: ad5e57db47fb9334585425a134e906cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 06 - Defaultfgeg
+    second: {fileID: 2100000, guid: 3e33c4a8930e8624ea54c29be5c79598, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 11 - Default
+    second: {fileID: 2100000, guid: d7917fe581a1ea040b1de2de17a10230, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 12 - Defaultwd
+    second: {fileID: 2100000, guid: fda3538380df84f4e8cf565e5a74ac7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 17 - Defaultcdvcdc
+    second: {fileID: 2100000, guid: 2519e51256fc53d4e94f40283c409bfa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Alucobond2
+    second: {fileID: 2100000, guid: 3987159310236d74493c54b37659e14c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #101'
+    second: {fileID: 2100000, guid: b1c80d2155ec56e4c842c9e967c8638e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #159'
+    second: {fileID: 2100000, guid: 0fddf67c8f146874e8c380815498ec60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #29'
+    second: {fileID: 2100000, guid: ee013d77c9194874c873e660bb6eb61a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #603'
+    second: {fileID: 2100000, guid: a0c8bd2abba74d8479fbe708f3f1c888, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 25c68ecc61678d14c893a20439eb4e0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: baski
+    second: {fileID: 2100000, guid: eb4425bd99885cc4588b67ca1b005178, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: beyazzz
+    second: {fileID: 2100000, guid: cacb7239faddf18409ef2dcfadbb77df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: 1c25933136b631e4788b1013ef95da4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_06_20_01
+    second: {fileID: 2100000, guid: 2318d1ce3ad1176428f0767a5b0242c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_06_20_02
+    second: {fileID: 2100000, guid: 5c197e0df8dc9324f83988b0e57111f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_06_20_03
+    second: {fileID: 2100000, guid: cb6e4797ad175a343a948ccba424bb4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_06_20_04
+    second: {fileID: 2100000, guid: 48e78bcf3ac1ed949b4578a7338faa50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dolap kapak
+    second: {fileID: 2100000, guid: 9a2efc0ac2a589646b0371234ecf9483, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dwd
+    second: {fileID: 2100000, guid: bfe62a3033dacbd4dbcfc4fc3edc1eb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fransiz_balkon_cam
+    second: {fileID: 2100000, guid: cafcc4d81e3202b4faadaa3e7b9289d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kapak_2
+    second: {fileID: 2100000, guid: 0c698d36d54a53b4c85f4a8b5ace279d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: koryon
+    second: {fileID: 2100000, guid: 8490c9d861e03e94aac5a9fd6c9777f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: krom
+    second: {fileID: 2100000, guid: 52b302a6c127d0942ac62b52b429d4c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lightbluemetal
+    second: {fileID: 2100000, guid: e0222dcaefa7cf345887857530d27e76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: 70d30d05bb224ad498131038e34bff75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: oturak
+    second: {fileID: 2100000, guid: 8667246c84779dd45bd01712772657bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tabure
+    second: {fileID: 2100000, guid: e9af194dde1824a47b16ccc0f636ef2a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
