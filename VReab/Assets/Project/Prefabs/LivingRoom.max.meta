@@ -2602,6 +2602,12 @@ ModelImporter:
     2101828: 'Material #272243829'
     2101830: 'Material #272243815'
     2101832: 'Material #272243845'
+    2101834: 'Material #797'
+    2101836: 'Material #800'
+    2101838: 'Material #801'
+    2101840: 'Material #796'
+    2101842: 'Material #799'
+    2101844: 'Material #794'
     2300000: ' 1'
     2300002: ' 2'
     2300004: ' 3'
@@ -5123,7 +5129,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.005
+    globalScale: 0.001
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
