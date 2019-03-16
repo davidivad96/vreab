@@ -5,6 +5,7 @@ using UnityEngine;
 public class FillCup : MonoBehaviour {
     private bool active;
     public GameObject milk_brick;
+    public GameObject liquid_fill;
 
     // Start is called before the first frame update
     void Start() {
@@ -21,7 +22,7 @@ public class FillCup : MonoBehaviour {
                 float distance = Vector3.Distance(transform.position, Camera.main.transform.position);
                 // If the cup is close enough to the player, then it can be filled with milk
                 if (distance <= 3.0f) {
-                    transform.GetChild(0).gameObject.SetActive(true);
+                    liquid_fill.SetActive(true);
                 }
             }
         }

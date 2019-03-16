@@ -1,34 +1,14 @@
 fileFormatVersion: 2
-guid: a465b0bfb98b0274281c0bc01d702719
+guid: 963f5ad33edfccd438cb9a38e93743de
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cup-Bottom
-    100004: Cup-Logo
-    100006: Cup-Main
-    100008: default
     400000: //RootNode
-    400002: Cup-Bottom
-    400004: Cup-Logo
-    400006: Cup-Main
-    400008: default
-    2100000: Cup-BottomMat
-    2100002: Cup-LogoMat
-    2100004: Cup-MainMat
-    2100006: defaultMat
-    2300000: Cup-Bottom
-    2300002: Cup-Logo
-    2300004: Cup-Main
-    2300006: default
-    3300000: Cup-Bottom
-    3300002: Cup-Logo
-    3300004: Cup-Main
-    3300006: default
-    4300000: Cup-Bottom
-    4300002: Cup-Logo
-    4300004: Cup-Main
-    4300006: default
+    2100000: PAINT_silver
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cylinder001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -60,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.008
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
