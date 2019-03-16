@@ -2608,6 +2608,9 @@ ModelImporter:
     2101840: 'Material #796'
     2101842: 'Material #799'
     2101844: 'Material #794'
+    2101846: 'Material #35'
+    2101848: 'Material #36'
+    2101850: 'Material #34'
     2300000: ' 1'
     2300002: ' 2'
     2300004: ' 3'
@@ -5150,7 +5153,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.005
+    previousCalculatedGlobalScale: 0.001
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
