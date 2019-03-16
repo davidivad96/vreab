@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spin : MonoBehaviour {
 
 	public float speed;
-	bool active;
+	private bool active;
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +24,7 @@ public class Spin : MonoBehaviour {
 		// "Jump" is the up trigger button in the bluetooth controller,
 		// and "Fire1" is the left click button of the mouse.
 		// This way it works in the editor and in the mobile device
-		if ((Input.GetButtonDown ("Jump") || Input.GetButtonDown ("Fire1")) && active) {
+		if ((Input.GetButtonDown ("Jump") || Input.GetMouseButtonDown(0)) && active) {
 			// If there's a "PointerClick" event, then the object spins in the opposite direction
 			speed = -speed;
 		}
