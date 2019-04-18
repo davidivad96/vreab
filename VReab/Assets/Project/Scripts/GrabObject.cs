@@ -8,6 +8,10 @@ public class GrabObject : MonoBehaviour
 	private bool grabbed;
 	private Rigidbody rigidbody_component;
     private GameObject player;
+    
+    public float distance_forward;
+    public float distance_up;
+    public float distance_right;
 
     // Start is called before the first frame update
     void Start () {
@@ -15,7 +19,7 @@ public class GrabObject : MonoBehaviour
 		grabbed = false;
 		rigidbody_component = gameObject.GetComponent<Rigidbody> ();
         player = GameObject.FindGameObjectWithTag("Player");
-	}
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -23,18 +27,11 @@ public class GrabObject : MonoBehaviour
 		if (grabbed) {
 			// If detect a "PointerClick" event with the right button of the mouse or the secondary trigger of the bluetooth controller, put down the object
 			if (Input.GetButtonDown("Fire2") || Input.GetMouseButtonDown (1)) {
-                grabbed = false;
-                // Set the grabbing_something attribute for the player
-                player.GetComponent<Movement>().setGrabbingSomething(false);
-                // Enable collider
-                gameObject.GetComponent<BoxCollider>().enabled = true;
+                releaseObject();
             } else {
-				float distance_forward = 0.7f;
-                float distance_up = -0.2f;
-
 				// Disable gravity and place object in front of the player
 				rigidbody_component.useGravity = false;
-				transform.position = Camera.main.transform.position + Camera.main.transform.forward * distance_forward + Camera.main.transform.up * distance_up;
+				transform.position = Camera.main.transform.position + Camera.main.transform.forward * distance_forward + Camera.main.transform.up * distance_up + Camera.main.transform.right * distance_right;
 				transform.rotation = Camera.main.transform.rotation;
 			}
         } else {
@@ -49,8 +46,6 @@ public class GrabObject : MonoBehaviour
                         grabbed = true;
                         // Set the grabbing_something attribute for the player
                         player.GetComponent<Movement>().setGrabbingSomething(true);
-                        // Disable collider in order to prevent weird physics
-                        gameObject.GetComponent<BoxCollider>().enabled = false;
                     }
                 }
 			} else {
@@ -73,5 +68,22 @@ public class GrabObject : MonoBehaviour
     // Return the grabbed attribute
     public bool isGrabbed() {
         return grabbed;
+    }
+
+    // Release object
+    public void releaseObject() {
+        grabbed = false;
+        // Set the grabbing_something attribute for the player
+        player.GetComponent<Movement>().setGrabbingSomething(false);
+        // Disable isKinematic so that the object falls when it's dropped
+        rigidbody_component.isKinematic = false;
+    }
+
+    // Detect collision
+    void OnCollisionEnter(Collision col) {
+        // If the object is falling and a collision is detected, isKinematic=true
+        if (!rigidbody_component.isKinematic) {
+            rigidbody_component.isKinematic = true;
+        }
     }
 }

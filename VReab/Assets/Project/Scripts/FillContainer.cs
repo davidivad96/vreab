@@ -1,0 +1,40 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FillContainer : MonoBehaviour {
+    private bool active;
+    public GameObject object_used_to_fill;
+    public GameObject filled_object;
+
+    // Start is called before the first frame update
+    void Start() {
+        active = false;
+    }
+
+    // Update is called once per frame
+    void Update() {
+        // If detect a "PointerClick" event
+        if ((Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0)) && active) {
+            // If the player is grabbing the object used to fill, then fill the container
+            if (object_used_to_fill.GetComponent<GrabObject>().isGrabbed()) {
+                // Calculate the distance between the player and the container
+                float distance = Vector3.Distance(transform.position, Camera.main.transform.position);
+                // If the container is close enough to the player, then it can be filled with the filled object
+                if (distance <= 3.0f) {
+                    filled_object.SetActive(true);
+                }
+            }
+        }
+    }
+
+    // Called when there's a "PointerEnter" event
+    public void Activate() {
+        active = true;
+    }
+
+    // Called when there's a "PointerExit" event
+    public void Deactivate() {
+        active = false;
+    }
+}
