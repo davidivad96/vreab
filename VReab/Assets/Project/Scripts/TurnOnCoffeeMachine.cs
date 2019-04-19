@@ -9,6 +9,7 @@ public class TurnOnCoffeeMachine : MonoBehaviour
     private bool filterPutted;
     private bool cupPutted;
 
+    public GameObject cup;
     public GameObject cable;
     public GameObject waterContainer;
     public GameObject filter;
@@ -28,9 +29,12 @@ public class TurnOnCoffeeMachine : MonoBehaviour
             bool isPlugged = cable.transform.GetChild(0).gameObject.activeSelf;
             bool waterContainerFilled = waterContainer.transform.GetChild(1).gameObject.activeSelf;
             bool filterFilled = filter.transform.GetChild(0).GetChild(3).gameObject.activeSelf;
+            bool cupWithCoffee = cup.transform.GetChild(2).gameObject.activeSelf || cup.transform.GetChild(3).gameObject.activeSelf;
 
-            if (isPlugged && waterContainerFilled && waterContainerPutted && filterFilled && filterPutted && cupPutted) {
-                Debug.Log("IT'S READY!");
+            // If all the conditions are true, then start making the coffee
+            if (isPlugged && waterContainerFilled && waterContainerPutted && filterFilled && filterPutted && cupPutted && !cupWithCoffee) {
+                Debug.Log("START MAKING COFFEE!");
+                StartCoroutine(makeCoffee());
             }
         }
     }
@@ -58,5 +62,35 @@ public class TurnOnCoffeeMachine : MonoBehaviour
     // Called when the cup is putted in the coffee machine or grabbed from it
     public void putCup(bool put) {
         cupPutted = put;
+    }
+
+    IEnumerator makeCoffee() {
+        // Disable box colliders so that we can't interact with the objects while the coffee is being made
+        enableAllColliders(false);
+        // Wait for 10 seconds to make the coffee
+        yield return new WaitForSeconds(10);
+        // Enable again all box colliders
+        enableAllColliders(true);
+        // If the cup had already milk, then now it has coffee with milk.
+        // But if the cup was empty, then now it only has coffee.
+        if (cup.transform.GetChild(1).gameObject.activeSelf) {
+            // Disable milk
+            cup.transform.GetChild(1).gameObject.SetActive(false);
+            // Enable coffee with milk
+            cup.transform.GetChild(3).gameObject.SetActive(true);
+        } else {
+            // Enable coffee
+            cup.transform.GetChild(2).gameObject.SetActive(true);
+        }
+        Debug.Log("COFFEE READY!");
+    }
+
+    // Enable or disabled all box colliders of the objects putted in the coffee machine
+    private void enableAllColliders(bool b) {
+        cup.GetComponent<BoxCollider>().enabled = b;
+        cable.GetComponent<BoxCollider>().enabled = b;
+        waterContainer.GetComponent<BoxCollider>().enabled = b;
+        filter.GetComponent<BoxCollider>().enabled = b;
+        gameObject.GetComponent<BoxCollider>().enabled = b;
     }
 }

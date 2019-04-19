@@ -6299,7 +6299,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2d28c4cbb2722f8429cc7079d8bb8cc2, type: 2}
+  - {fileID: 2100000, guid: 451bb7b4fc8aee44bb5c3a0369fdd6f3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25263,7 +25263,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2d28c4cbb2722f8429cc7079d8bb8cc2, type: 2}
+  - {fileID: 2100000, guid: f6911fca8f9709a45a5d6113b7cbdaef, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31888,6 +31888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef698aebc373b504396891b5dc4ad7de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cup: {fileID: 1720408553}
   cable: {fileID: 902205825}
   waterContainer: {fileID: 1023656085}
   filter: {fileID: 75828775}

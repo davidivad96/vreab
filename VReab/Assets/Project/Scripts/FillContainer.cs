@@ -22,7 +22,22 @@ public class FillContainer : MonoBehaviour {
                 float distance = Vector3.Distance(transform.position, Camera.main.transform.position);
                 // If the container is close enough to the player, then it can be filled with the filled object
                 if (distance <= 3.0f) {
-                    filled_object.SetActive(true);
+                    // In the case of the cup, it can be filled with only milk or with coffee with milk
+                    if (gameObject.name == "cup") {
+                        // If the cup had already coffee, then now it has coffee with milk.
+                        // But if the cup was empty, then now it only has milk.
+                        if (gameObject.transform.GetChild(2).gameObject.activeSelf) {
+                            // Disable coffee
+                            gameObject.transform.GetChild(2).gameObject.SetActive(false);
+                            // Enable coffee with milk
+                            gameObject.transform.GetChild(3).gameObject.SetActive(true);
+                        } else {
+                            // Enable milk
+                            gameObject.transform.GetChild(1).gameObject.SetActive(true);
+                        }
+                    } else {
+                        filled_object.SetActive(true);
+                    }
                 }
             }
         }
