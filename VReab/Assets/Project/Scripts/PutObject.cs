@@ -33,7 +33,7 @@ public class PutObject : MonoBehaviour
                 float distance = Vector3.Distance(transform.position, Camera.main.transform.position);
                 // If the machine is close enough to the player, then the object can be put
                 if (distance <= 3.0f) {
-                    grab_object_scripts[index].releaseObject();
+                    grab_object_scripts[index].releaseObject(false);
                     objects_to_put[index].transform.position = initial_positions[index];
                     objects_to_put[index].transform.rotation = initial_rotations[index];
                 }

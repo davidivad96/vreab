@@ -6,6 +6,7 @@ public class GrabObject : MonoBehaviour
 {
 	private bool active;
 	private bool grabbed;
+    private bool affect_gravity;
 	private Rigidbody rigidbody_component;
     private GameObject player;
     
@@ -17,6 +18,7 @@ public class GrabObject : MonoBehaviour
     void Start () {
 		active = false;
 		grabbed = false;
+        affect_gravity = true;
 		rigidbody_component = gameObject.GetComponent<Rigidbody> ();
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -27,7 +29,7 @@ public class GrabObject : MonoBehaviour
 		if (grabbed) {
 			// If detect a "PointerClick" event with the right button of the mouse or the secondary trigger of the bluetooth controller, put down the object
 			if (Input.GetButtonDown("Fire2") || Input.GetMouseButtonDown (1)) {
-                releaseObject();
+                releaseObject(true);
             } else {
 				// Disable gravity and place object in front of the player
 				rigidbody_component.useGravity = false;
@@ -49,8 +51,10 @@ public class GrabObject : MonoBehaviour
                     }
                 }
 			} else {
-				// Enable gravity
-				rigidbody_component.useGravity = true;
+				// Enable gravity if this object is affected by gravity
+                if (affect_gravity) {
+				    rigidbody_component.useGravity = true;
+                }
 			}
 		}
 	}
@@ -71,18 +75,20 @@ public class GrabObject : MonoBehaviour
     }
 
     // Release object
-    public void releaseObject() {
+    public void releaseObject(bool gravity) {
         grabbed = false;
         // Set the grabbing_something attribute for the player
         player.GetComponent<Movement>().setGrabbingSomething(false);
         // Disable isKinematic so that the object falls when it's dropped
         rigidbody_component.isKinematic = false;
+        // The object is affected by gravity or not
+        affect_gravity = gravity;
     }
 
     // Detect collision
     void OnCollisionEnter(Collision col) {
         // If the object is falling and a collision is detected, isKinematic=true
-        if (!rigidbody_component.isKinematic) {
+        if (!rigidbody_component.isKinematic && gameObject.transform.position.y < 1.0f) {
             rigidbody_component.isKinematic = true;
         }
     }
