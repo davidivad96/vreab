@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: 7643c90468e62e34cbebc6c89a7c0d81
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: cube
+    100002: cube1
+    100004: cube2
+    100006: cube7
+    100008: cube75
+    100010: cube76
+    100012: cylinder
+    100014: cylinder11
+    100016: cylinder12
+    100018: cylinder13
+    100020: cylinder14
+    100022: cylinder15
+    100024: cylinder16
+    100026: polymsh_detached
+    100028: polymsh_detached2
+    100030: polymsh_detached5
+    100032: polymsh_detached6
+    100034: sphere
+    100036: sphere1
+    100038: sphere2
+    100040: //RootNode
+    400000: cube
+    400002: cube1
+    400004: cube2
+    400006: cube7
+    400008: cube75
+    400010: cube76
+    400012: cylinder
+    400014: cylinder11
+    400016: cylinder12
+    400018: cylinder13
+    400020: cylinder14
+    400022: cylinder15
+    400024: cylinder16
+    400026: polymsh_detached
+    400028: polymsh_detached2
+    400030: polymsh_detached5
+    400032: polymsh_detached6
+    400034: sphere
+    400036: sphere1
+    400038: sphere2
+    400040: //RootNode
+    2100000: cubeMat
+    2100002: cube1Mat
+    2100004: cube2Mat
+    2100006: cube7Mat
+    2100008: cube75Mat
+    2100010: cube76Mat
+    2100012: cylinderMat
+    2100014: cylinder11Mat
+    2100016: cylinder12Mat
+    2100018: cylinder13Mat
+    2100020: cylinder14Mat
+    2100022: cylinder15Mat
+    2100024: cylinder16Mat
+    2100026: polymsh_detachedMat
+    2100028: polymsh_detached2Mat
+    2100030: polymsh_detached5Mat
+    2100032: polymsh_detached6Mat
+    2100034: sphereMat
+    2100036: sphere1Mat
+    2100038: sphere2Mat
+    2300000: cube
+    2300002: cube1
+    2300004: cube2
+    2300006: cube7
+    2300008: cube75
+    2300010: cube76
+    2300012: cylinder
+    2300014: cylinder11
+    2300016: cylinder12
+    2300018: cylinder13
+    2300020: cylinder14
+    2300022: cylinder15
+    2300024: cylinder16
+    2300026: polymsh_detached
+    2300028: polymsh_detached2
+    2300030: polymsh_detached5
+    2300032: polymsh_detached6
+    2300034: sphere
+    2300036: sphere1
+    2300038: sphere2
+    3300000: cube
+    3300002: cube1
+    3300004: cube2
+    3300006: cube7
+    3300008: cube75
+    3300010: cube76
+    3300012: cylinder
+    3300014: cylinder11
+    3300016: cylinder12
+    3300018: cylinder13
+    3300020: cylinder14
+    3300022: cylinder15
+    3300024: cylinder16
+    3300026: polymsh_detached
+    3300028: polymsh_detached2
+    3300030: polymsh_detached5
+    3300032: polymsh_detached6
+    3300034: sphere
+    3300036: sphere1
+    3300038: sphere2
+    4300000: cube
+    4300002: cube1
+    4300004: cube2
+    4300006: cube7
+    4300008: cube75
+    4300010: cube76
+    4300012: cylinder
+    4300014: cylinder11
+    4300016: cylinder12
+    4300018: cylinder13
+    4300020: cylinder14
+    4300022: cylinder15
+    4300024: cylinder16
+    4300026: polymsh_detached
+    4300028: polymsh_detached2
+    4300030: polymsh_detached5
+    4300032: polymsh_detached6
+    4300034: sphere
+    4300036: sphere1
+    4300038: sphere2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.07
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
