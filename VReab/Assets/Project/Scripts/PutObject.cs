@@ -10,6 +10,7 @@ public class PutObject : MonoBehaviour
     private List<Quaternion> initial_rotations = new List<Quaternion>();
 
     public List<GameObject> objects_to_put;
+    public TurnOnCoffeeMachine turn_on_script;
 
     // Start is called before the first frame update
     void Start() {
@@ -36,6 +37,17 @@ public class PutObject : MonoBehaviour
                     grab_object_scripts[index].releaseObject(false);
                     objects_to_put[index].transform.position = initial_positions[index];
                     objects_to_put[index].transform.rotation = initial_rotations[index];
+                    // Tell the "TurnOnCoffeeMachine" script that an object has been putted
+                    if (index == 0) {
+                        // Coffee Filter
+                        turn_on_script.putCoffeeFilter(true);
+                    } else if (index == 1) {
+                        // Water Container
+                        turn_on_script.putWaterContainer(true);
+                    } else if (index == 2) {
+                        // Cup
+                        turn_on_script.putCup(true);
+                    }
                 }
             }
         }

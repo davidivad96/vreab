@@ -16,7 +16,7 @@ public class PlugUnplugCable : MonoBehaviour
         // If detect a "PointerClick" event
         if ((Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0)) && active) {
             // If the cable is not plugged, then plug it. If it is plugged, then unplug it.
-            if (gameObject.transform.GetChild(0).gameObject.active) {
+            if (gameObject.transform.GetChild(0).gameObject.activeSelf) {
                 gameObject.transform.GetChild(0).gameObject.SetActive(false);
                 gameObject.transform.GetChild(1).gameObject.SetActive(true);
             } else {
