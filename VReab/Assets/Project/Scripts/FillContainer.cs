@@ -31,9 +31,7 @@ public class FillContainer : MonoBehaviour {
                             gameObject.transform.GetChild(2).gameObject.SetActive(false);
                             // Enable coffee with milk
                             gameObject.transform.GetChild(3).gameObject.SetActive(true);
-                        } else if (!(gameObject.transform.GetChild(0).gameObject.activeSelf || 
-                            gameObject.transform.GetChild(1).gameObject.activeSelf || 
-                            gameObject.transform.GetChild(2).gameObject.activeSelf)) {
+                        } else if (!gameObject.transform.GetChild(1).gameObject.activeSelf) {
                             // Enable milk
                             gameObject.transform.GetChild(1).gameObject.SetActive(true);
                         }

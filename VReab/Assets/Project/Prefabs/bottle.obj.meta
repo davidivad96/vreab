@@ -1,28 +1,64 @@
 fileFormatVersion: 2
-guid: 85bf585fba9f95549b06b8210c11b0df
+guid: e1beb2d5296f09749b338035025a0363
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Camera
-    100002: Circle
-    100004: //RootNode
-    100006: Plane
-    100008: Sun
-    400000: Camera
-    400002: Circle
-    400004: //RootNode
-    400006: Plane
-    400008: Sun
-    2000000: Camera
-    2100000: Material.004
-    2100002: Material.002
-    2300000: Circle
-    2300002: Plane
-    3300000: Circle
-    3300002: Plane
-    4300000: Plane
-    4300002: Circle
-    10800000: Sun
+    100000: //RootNode
+    100002: Cylinder01
+    100004: Cylinder02
+    100006: etiket_02
+    100008: etiket_03
+    100010: etiket_04
+    100012: etiket_1
+    100014: juice
+    100016: Line01
+    100018: Line03
+    400000: //RootNode
+    400002: Cylinder01
+    400004: Cylinder02
+    400006: etiket_02
+    400008: etiket_03
+    400010: etiket_04
+    400012: etiket_1
+    400014: juice
+    400016: Line01
+    400018: Line03
+    2100000: Cylinder01Mat
+    2100002: Cylinder02Mat
+    2100004: etiket_02Mat
+    2100006: etiket_03Mat
+    2100008: etiket_04Mat
+    2100010: etiket_1Mat
+    2100012: juiceMat
+    2100014: Line01Mat
+    2100016: Line03Mat
+    2300000: Cylinder01
+    2300002: Cylinder02
+    2300004: etiket_02
+    2300006: etiket_03
+    2300008: etiket_04
+    2300010: etiket_1
+    2300012: juice
+    2300014: Line01
+    2300016: Line03
+    3300000: Cylinder01
+    3300002: Cylinder02
+    3300004: etiket_02
+    3300006: etiket_03
+    3300008: etiket_04
+    3300010: etiket_1
+    3300012: juice
+    3300014: Line01
+    3300016: Line03
+    4300000: Cylinder01
+    4300002: Cylinder02
+    4300004: etiket_02
+    4300006: etiket_03
+    4300008: etiket_04
+    4300010: etiket_1
+    4300012: juice
+    4300014: Line01
+    4300016: Line03
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -54,7 +90,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.05
+    globalScale: 0.005
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1

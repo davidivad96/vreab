@@ -41,8 +41,8 @@ public class GrabObject : MonoBehaviour
         } else {
 			// If detect a "PointerClick" event, grab the object
 			if ((Input.GetButtonDown ("Jump") || Input.GetMouseButtonDown(0)) && active) {
-				// Calculate the distance between the player and the object
-				float distance = Vector3.Distance (transform.position, Camera.main.transform.position);
+                // Calculate the distance between the player and the object
+                float distance = Vector3.Distance (transform.position, Camera.main.transform.position);
 				// If the object is close enough to the player, then it can be grabbed
 				if (distance <= 3.0f) {
                     // If the player isn't already grabbing anything
