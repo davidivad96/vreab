@@ -8,6 +8,7 @@ public class TurnOnCoffeeMachine : MonoBehaviour
     private bool waterContainerPutted;
     private bool filterPutted;
     private bool cupPutted;
+    private bool coffeeMade;
 
     public GameObject cup;
     public GameObject cable;
@@ -20,6 +21,7 @@ public class TurnOnCoffeeMachine : MonoBehaviour
         waterContainerPutted = true;
         filterPutted = true;
         cupPutted = true;
+        coffeeMade = false;
     }
 
     // Update is called once per frame
@@ -29,10 +31,9 @@ public class TurnOnCoffeeMachine : MonoBehaviour
             bool isPlugged = cable.transform.GetChild(0).gameObject.activeSelf;
             bool waterContainerFilled = waterContainer.transform.GetChild(1).gameObject.activeSelf;
             bool filterFilled = filter.transform.GetChild(0).GetChild(3).gameObject.activeSelf;
-            bool cupWithCoffee = cup.transform.GetChild(2).gameObject.activeSelf || cup.transform.GetChild(3).gameObject.activeSelf;
 
             // If all the conditions are true, then start making the coffee
-            if (isPlugged && waterContainerFilled && waterContainerPutted && filterFilled && filterPutted && cupPutted && !cupWithCoffee) {
+            if (isPlugged && waterContainerFilled && waterContainerPutted && filterFilled && filterPutted && cupPutted && !coffeeMade) {
                 Debug.Log("START MAKING COFFEE!");
                 StartCoroutine(makeCoffee());
             }
@@ -83,6 +84,7 @@ public class TurnOnCoffeeMachine : MonoBehaviour
             cup.transform.GetChild(2).gameObject.SetActive(true);
         }
         Debug.Log("COFFEE READY!");
+        coffeeMade = true;
     }
 
     // Enable or disabled all box colliders of the objects putted in the coffee machine
