@@ -13,7 +13,8 @@ public class GrabObject : MonoBehaviour
     public float distance_forward;
     public float distance_up;
     public float distance_right;
-    public TurnOnCoffeeMachine turn_on_script;
+    public TurnOnCoffeeMachine turn_on_coffee_script;
+    public TurnOnToaster turn_on_toaster_script;
 
     // Start is called before the first frame update
     void Start () {
@@ -49,16 +50,26 @@ public class GrabObject : MonoBehaviour
                         grabbed = true;
                         // Set the grabbing_something attribute for the player
                         player.GetComponent<Movement>().setGrabbingSomething(true);
-                        // Tell the "TurnOnCoffeeMachine" script that an object has been grabbed
-                        if (gameObject.name == "CoffeeFilter") {
-                            // Coffee Filter
-                            turn_on_script.putCoffeeFilter(false);
-                        } else if (gameObject.name == "WaterContainer") {
-                            // Water Container
-                            turn_on_script.putWaterContainer(false);
-                        } else if (gameObject.name == "cup") {
-                            // Cup
-                            turn_on_script.putCup(false);
+                        // Tell the "TurnOnCoffeeMachine" or the "TurnOnToaster" script that an object has been grabbed
+                        if (turn_on_coffee_script != null) {
+                            if (gameObject.name == "CoffeeFilter") {
+                                // Coffee Filter
+                                turn_on_coffee_script.putCoffeeFilter(false);
+                            } else if (gameObject.name == "WaterContainer") {
+                                // Water Container
+                                turn_on_coffee_script.putWaterContainer(false);
+                            } else if (gameObject.name == "cup") {
+                                // Cup
+                                turn_on_coffee_script.putCup(false);
+                            }
+                        } else if (turn_on_toaster_script != null) {
+                            if (gameObject.name == "toast1") {
+                                // Toast 1
+                                turn_on_toaster_script.putToast1(false);
+                            } else if (gameObject.name == "toast2") {
+                                // Toast 2
+                                turn_on_toaster_script.putToast2(false);
+                            }
                         }
                     }
                 }
