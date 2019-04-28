@@ -21,7 +21,7 @@ public class FillContainer : MonoBehaviour {
                 // Calculate the distance between the player and the container
                 float distance = Vector3.Distance(transform.position, Camera.main.transform.position);
                 // If the container is close enough to the player, then it can be filled with the filled object
-                if (distance <= 3.0f) {
+                if (distance <= 5.0f) {
                     // In the case of the cup, it can be filled with only milk or with coffee with milk
                     if (gameObject.name == "cup") {
                         // If the cup had already coffee, then now it has coffee with milk.

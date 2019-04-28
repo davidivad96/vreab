@@ -44,7 +44,7 @@ public class GrabObject : MonoBehaviour
                 // Calculate the distance between the player and the object
                 float distance = Vector3.Distance (transform.position, Camera.main.transform.position);
 				// If the object is close enough to the player, then it can be grabbed
-				if (distance <= 3.0f) {
+				if (distance <= 5.0f) {
                     // If the player isn't already grabbing anything
                     if (!player.GetComponent<Movement>().getGrabbingSomething()) {
                         grabbed = true;
