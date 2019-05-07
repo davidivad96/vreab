@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class FillContainer : MonoBehaviour {
     private bool active;
+    private bool is_filled;
     public GameObject object_used_to_fill;
     public GameObject filled_object;
 
     // Start is called before the first frame update
     void Start() {
         active = false;
+        is_filled = false;
     }
 
     // Update is called once per frame
@@ -38,6 +40,7 @@ public class FillContainer : MonoBehaviour {
                     } else {
                         filled_object.SetActive(true);
                     }
+                    is_filled = true;
                 }
             }
         }
@@ -51,5 +54,10 @@ public class FillContainer : MonoBehaviour {
     // Called when there's a "PointerExit" event
     public void Deactivate() {
         active = false;
+    }
+
+    // Called from the "CanvasManager" script
+    public bool getIsFilled() {
+        return is_filled;
     }
 }

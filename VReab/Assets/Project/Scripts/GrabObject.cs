@@ -15,6 +15,7 @@ public class GrabObject : MonoBehaviour
     public float distance_right;
     public TurnOnCoffeeMachine turn_on_coffee_script;
     public TurnOnToaster turn_on_toaster_script;
+    public PutObject put_object_script;
 
     // Start is called before the first frame update
     void Start () {
@@ -70,6 +71,10 @@ public class GrabObject : MonoBehaviour
                                 // Toast 2
                                 turn_on_toaster_script.putToast2(false);
                             }
+                        }
+                        // Tell the "PutObject" script that an object has been grabbed
+                        if (put_object_script != null) {
+                            put_object_script.grabObject(gameObject.name);
                         }
                     }
                 }

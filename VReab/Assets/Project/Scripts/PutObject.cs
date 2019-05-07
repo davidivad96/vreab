@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PutObject : MonoBehaviour
-{
+public class PutObject : MonoBehaviour {
     private bool active;
     private List<GrabObject> grab_object_scripts = new List<GrabObject>();
     private List<Vector3> initial_positions = new List<Vector3>();
     private List<Quaternion> initial_rotations = new List<Quaternion>();
+    private List<bool> objects_putted = new List<bool>();
+    private bool all_objects_putted;
 
     public List<GameObject> objects_to_put;
 
@@ -17,6 +18,8 @@ public class PutObject : MonoBehaviour
             grab_object_scripts.Add(obj.GetComponent<GrabObject>());
             initial_positions.Add(obj.transform.position);
             initial_rotations.Add(obj.transform.rotation);
+            objects_putted.Add(false);
+            all_objects_putted = false;
         }
     }
 
@@ -40,6 +43,15 @@ public class PutObject : MonoBehaviour
                     grab_object_scripts[index].releaseObject(false);
                     objects_to_put[index].transform.position = initial_positions[index];
                     objects_to_put[index].transform.rotation = initial_rotations[index];
+                    objects_putted[index] = true;
+
+                    // Check if all objects are putted
+                    all_objects_putted = true;
+                    for (int i = 0; i < objects_putted.Count; i++) {
+                        if (objects_putted[i] == false) {
+                            all_objects_putted = false;
+                        }
+                    }      
                 }
             }
         }
@@ -53,5 +65,19 @@ public class PutObject : MonoBehaviour
     // Called when there's a "PointerExit" event
     public void Deactivate() {
         active = false;
+    }
+
+    // Called from the "GrabObject" script when an object is grabbed
+    public void grabObject(string obj_name) {
+        for(int i = 0; i < objects_to_put.Count; i++) {
+            if (objects_to_put[i].name == obj_name) {
+                objects_putted[i] = false;
+            }
+        }
+    }
+
+    // Called from the "CanvasManager" script
+    public bool getAllObjectsPutted() {
+        return all_objects_putted;
     }
 }
