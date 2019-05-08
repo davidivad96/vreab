@@ -1,15 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FillContainer : MonoBehaviour {
     private bool active;
+    private bool is_filled;
     public GameObject object_used_to_fill;
     public GameObject filled_object;
 
     // Start is called before the first frame update
     void Start() {
         active = false;
+        is_filled = false;
     }
 
     // Update is called once per frame
@@ -21,7 +24,7 @@ public class FillContainer : MonoBehaviour {
                 // Calculate the distance between the player and the container
                 float distance = Vector3.Distance(transform.position, Camera.main.transform.position);
                 // If the container is close enough to the player, then it can be filled with the filled object
-                if (distance <= 3.0f) {
+                if (distance <= 5.0f) {
                     // In the case of the cup, it can be filled with only milk or with coffee with milk
                     if (gameObject.name == "cup") {
                         // If the cup had already coffee, then now it has coffee with milk.
@@ -38,6 +41,21 @@ public class FillContainer : MonoBehaviour {
                     } else {
                         filled_object.SetActive(true);
                     }
+                    is_filled = true;
+                    // Calculate and assign to canvas the total time (in seconds) last filling the cup or the glass
+                    if (gameObject.name == "cup") {
+                        FindInactiveObjectByName("FillCupText").GetComponent<Text>().text = "Llenar la taza: " + Time.time.ToString("F2") + " segundos";
+                    } else if (gameObject.name == "glass") {
+                        FindInactiveObjectByName("FillGlassText").GetComponent<Text>().text = "Llenar el vaso: " + Time.time.ToString("F2") + " segundos";
+                    }
+                }
+            } else {
+                // If trying to fill the cup with the orange juice bottle, or trying to fill the glass with the milk brick,
+                // then there's an error and it's setted in the final canvas information
+                if (gameObject.name == "cup" && GameObject.Find("OrangeJuiceBottle").GetComponent<GrabObject>().isGrabbed()) {
+                    FindInactiveObjectByName("Error1Text").GetComponent<Text>().text = "Intentar llenar la taza con zumo: Sí";
+                } else if (gameObject.name == "glass" && GameObject.Find("MilkBrick").GetComponent<GrabObject>().isGrabbed()) {
+                    FindInactiveObjectByName("Error2Text").GetComponent<Text>().text = "Intentar llenar el vaso con leche: Sí";
                 }
             }
         }
@@ -51,5 +69,23 @@ public class FillContainer : MonoBehaviour {
     // Called when there's a "PointerExit" event
     public void Deactivate() {
         active = false;
+    }
+
+    // Called from the "CanvasManager" script
+    public bool getIsFilled() {
+        return is_filled;
+    }
+
+    // Used to find inactive objects (GameObject.Find() only works for active objects)
+    private GameObject FindInactiveObjectByName(string name) {
+        Transform[] objs = Resources.FindObjectsOfTypeAll<Transform>() as Transform[];
+        for (int i = 0; i < objs.Length; i++) {
+            if (objs[i].hideFlags == HideFlags.None) {
+                if (objs[i].name == name) {
+                    return objs[i].gameObject;
+                }
+            }
+        }
+        return null;
     }
 }

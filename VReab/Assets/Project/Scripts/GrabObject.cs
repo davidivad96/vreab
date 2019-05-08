@@ -15,6 +15,7 @@ public class GrabObject : MonoBehaviour
     public float distance_right;
     public TurnOnCoffeeMachine turn_on_coffee_script;
     public TurnOnToaster turn_on_toaster_script;
+    public PutObject put_object_script;
 
     // Start is called before the first frame update
     void Start () {
@@ -44,7 +45,7 @@ public class GrabObject : MonoBehaviour
                 // Calculate the distance between the player and the object
                 float distance = Vector3.Distance (transform.position, Camera.main.transform.position);
 				// If the object is close enough to the player, then it can be grabbed
-				if (distance <= 3.0f) {
+				if (distance <= 5.0f) {
                     // If the player isn't already grabbing anything
                     if (!player.GetComponent<Movement>().getGrabbingSomething()) {
                         grabbed = true;
@@ -70,6 +71,10 @@ public class GrabObject : MonoBehaviour
                                 // Toast 2
                                 turn_on_toaster_script.putToast2(false);
                             }
+                        }
+                        // Tell the "PutObject" script that an object has been grabbed
+                        if (put_object_script != null) {
+                            put_object_script.grabObject(gameObject.name);
                         }
                     }
                 }
