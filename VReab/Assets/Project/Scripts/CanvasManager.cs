@@ -6,7 +6,6 @@ public class CanvasManager : MonoBehaviour {
     public PutObject put_objects_script;
     public List<FillContainer> fill_container_scripts;
     public GameObject canvas;
-    public GameObject googleVR;
 
     // Update is called once per frame
     void Update() {
@@ -19,7 +18,6 @@ public class CanvasManager : MonoBehaviour {
         }
         if (all_filled && put_objects_script.getAllObjectsPutted()) {
             canvas.SetActive(true);
-            googleVR.SetActive(false);
         }
     }
 }
