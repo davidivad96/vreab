@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PutObject : MonoBehaviour {
     private bool active;
@@ -51,7 +52,14 @@ public class PutObject : MonoBehaviour {
                         if (objects_putted[i] == false) {
                             all_objects_putted = false;
                         }
-                    }      
+                    }
+
+                    // Calculate and assign to canvas the total time (in seconds) last putting the cup or the glass
+                    if (objects_to_put[index].name == "cup") {
+                        FindInactiveObjectByName("PutCupText").GetComponent<Text>().text = "Colocar la taza: " + Time.time.ToString("F2") + " segundos";
+                    } else if (objects_to_put[index].name == "glass") {
+                        FindInactiveObjectByName("PutGlassText").GetComponent<Text>().text = "Colocar el vaso: " + Time.time.ToString("F2") + " segundos";
+                    }
                 }
             }
         }
@@ -79,5 +87,18 @@ public class PutObject : MonoBehaviour {
     // Called from the "CanvasManager" script
     public bool getAllObjectsPutted() {
         return all_objects_putted;
+    }
+
+    // Used to find inactive objects (GameObject.Find() only works for active objects)
+    private GameObject FindInactiveObjectByName(string name) {
+        Transform[] objs = Resources.FindObjectsOfTypeAll<Transform>() as Transform[];
+        for (int i = 0; i < objs.Length; i++) {
+            if (objs[i].hideFlags == HideFlags.None) {
+                if (objs[i].name == name) {
+                    return objs[i].gameObject;
+                }
+            }
+        }
+        return null;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FillContainer : MonoBehaviour {
     private bool active;
@@ -41,6 +42,20 @@ public class FillContainer : MonoBehaviour {
                         filled_object.SetActive(true);
                     }
                     is_filled = true;
+                    // Calculate and assign to canvas the total time (in seconds) last filling the cup or the glass
+                    if (gameObject.name == "cup") {
+                        FindInactiveObjectByName("FillCupText").GetComponent<Text>().text = "Llenar la taza: " + Time.time.ToString("F2") + " segundos";
+                    } else if (gameObject.name == "glass") {
+                        FindInactiveObjectByName("FillGlassText").GetComponent<Text>().text = "Llenar el vaso: " + Time.time.ToString("F2") + " segundos";
+                    }
+                }
+            } else {
+                // If trying to fill the cup with the orange juice bottle, or trying to fill the glass with the milk brick,
+                // then there's an error and it's setted in the final canvas information
+                if (gameObject.name == "cup" && GameObject.Find("OrangeJuiceBottle").GetComponent<GrabObject>().isGrabbed()) {
+                    FindInactiveObjectByName("Error1Text").GetComponent<Text>().text = "Intentar llenar la taza con zumo: Sí";
+                } else if (gameObject.name == "glass" && GameObject.Find("MilkBrick").GetComponent<GrabObject>().isGrabbed()) {
+                    FindInactiveObjectByName("Error2Text").GetComponent<Text>().text = "Intentar llenar el vaso con leche: Sí";
                 }
             }
         }
@@ -59,5 +74,18 @@ public class FillContainer : MonoBehaviour {
     // Called from the "CanvasManager" script
     public bool getIsFilled() {
         return is_filled;
+    }
+
+    // Used to find inactive objects (GameObject.Find() only works for active objects)
+    private GameObject FindInactiveObjectByName(string name) {
+        Transform[] objs = Resources.FindObjectsOfTypeAll<Transform>() as Transform[];
+        for (int i = 0; i < objs.Length; i++) {
+            if (objs[i].hideFlags == HideFlags.None) {
+                if (objs[i].name == name) {
+                    return objs[i].gameObject;
+                }
+            }
+        }
+        return null;
     }
 }
