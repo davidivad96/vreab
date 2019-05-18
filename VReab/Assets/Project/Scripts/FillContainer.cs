@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class FillContainer : MonoBehaviour {
     private bool active;
     private bool is_filled;
+    private AudioSource[] audio_sources;
     public GameObject object_used_to_fill;
     public GameObject filled_object;
 
@@ -13,6 +14,9 @@ public class FillContainer : MonoBehaviour {
     void Start() {
         active = false;
         is_filled = false;
+        audio_sources = GameObject.FindGameObjectWithTag("Player").GetComponents<AudioSource>();
+        Debug.Log("AUDIO SOURCES");
+        Debug.Log(audio_sources.Length);
     }
 
     // Update is called once per frame
@@ -42,6 +46,8 @@ public class FillContainer : MonoBehaviour {
                         filled_object.SetActive(true);
                     }
                     is_filled = true;
+                    // Play success sound
+                    audio_sources[0].Play();
                     // Calculate and assign to canvas the total time (in seconds) last filling the cup or the glass
                     if (gameObject.name == "cup") {
                         FindInactiveObjectByName("FillCupText").GetComponent<Text>().text = "Llenar la taza: " + Time.time.ToString("F2") + " segundos";
@@ -54,8 +60,12 @@ public class FillContainer : MonoBehaviour {
                 // then there's an error and it's setted in the final canvas information
                 if (gameObject.name == "cup" && GameObject.Find("OrangeJuiceBottle").GetComponent<GrabObject>().isGrabbed()) {
                     FindInactiveObjectByName("Error1Text").GetComponent<Text>().text = "Intentar llenar la taza con zumo: Sí";
+                    // Play error sound
+                    audio_sources[1].Play();
                 } else if (gameObject.name == "glass" && GameObject.Find("MilkBrick").GetComponent<GrabObject>().isGrabbed()) {
                     FindInactiveObjectByName("Error2Text").GetComponent<Text>().text = "Intentar llenar el vaso con leche: Sí";
+                    // Play error sound
+                    audio_sources[1].Play();
                 }
             }
         }

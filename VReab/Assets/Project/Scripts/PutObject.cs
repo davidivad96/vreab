@@ -12,6 +12,7 @@ public class PutObject : MonoBehaviour {
     private bool all_objects_putted;
 
     public List<GameObject> objects_to_put;
+    public AudioSource success_audio;
 
     // Awake is called before Start()
     void Awake() {
@@ -45,6 +46,8 @@ public class PutObject : MonoBehaviour {
                     objects_to_put[index].transform.position = initial_positions[index];
                     objects_to_put[index].transform.rotation = initial_rotations[index];
                     objects_putted[index] = true;
+                    // Play success sound
+                    success_audio.Play();
 
                     // Check if all objects are putted
                     all_objects_putted = true;
